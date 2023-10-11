@@ -165,5 +165,9 @@ article {
 
 .eighth {
     width: 100%;
+}
+
+.eighth img {
     display: inline-block;
+    width: 30%;
 }
