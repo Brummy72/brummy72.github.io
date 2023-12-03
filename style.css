@@ -1,285 +1,218 @@
 html {
-    overflow: hidden;
-    overflow: scroll;
-    background-image: url("/Photos/Tech.jpg");
-    background-size: 100%;
-}
-
-* {
-    flex-shrink: 0%;
+    color: black;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    margin: 0px;
-    text-align: center;
-}
-
-#tops {
-    background-image: url("/Photos/stock1.jpg");
-    background-size: 100% 100%;
-    padding-bottom: 50px;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-shrink: 0;
     width: 100%;
-    height: 820px;
     margin: 0px;
-}
-
-#nav1 {
-    width: 20%;
-    text-align: center;
-}
-
-#nav1 li {
-    display: block;
-}
-
-#nav1 a {
-    margin: 100px 30px 5px 5px;
-    padding: 20px 5px;
-    box-shadow: grey -4px 4px;
-    display: block;
-    background-color: beige;
-    color: black;
-    text-decoration: none;
-    font-family: "Raleway";
-    font-weight: 800;
-}
-
-#nav1 a:hover {
-    background-color: grey;
-    box-shadow: black -4px 4px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.banner {
-    margin-top: 50px;
-    background-color: white;
-    text-align: center;
-    color: black;
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-    box-shadow: -6px 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.banner h3 {
-    font-size: 45px;
-}
-
-.banner p {
-    font-size: 35px;
-    font-family: "Raleway";
-    width: 50%;
-}
-
-#nav2 {
-    width: 20%;
-    text-align: center;
-}
-
-#nav2 li {
-    display: block;
-}
-
-#nav2 a {
-    margin: 100px 5px 5px 5px;
-    padding: 20px 5px;
-    box-shadow: grey -4px 4px;
-    display: block;
-    color: black;
-    background-color: beige;
-    text-decoration: none;
-    font-family: "Raleway";
-    font-weight: 800;
-}
-
-#nav2 a:hover {
-    background-color: grey;
-    box-shadow: black -4px 4px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-#AB {    
-    text-align: center;
-    margin: 0px 0px;
-    border-top: 4px solid black;
-    width: 100%;
-    display: flex;
-    background-color: ;
-}
-
-#AB h1 {
-    margin: 10px 0px 0px 0px;
-}
-
-#AB div {
-    width: 50%;
-    height: 70%;
-    background: white;
-    margin-top: 60px;
     padding: 0px;
-    box-shadow: -4px 4px;
-    border-radius: 20px;
+    overflow: scroll;
 }
 
-#AB p{
+/* Header Rules */
+
+header {
+    position: fixed;
     width: 100%;
-    font-size: 23px;
-    margin: 10px 0px 0px 0px;
-}
-
-#AB img {
-    width: 40%;
-    box-shadow: black -4px 4px;
-    margin: 32px 0px 50px 0px;;
-    border-radius: 20px;
-}
-
-#boxes {
-    text-align: center;
-    justify-content: center;
     display: flex;
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-
+    z-index: 1;
 }
 
-#Q {
-    min-width: 80%;
-    height: 500px;
-    font-size: 30px;
-    text-align: center;
-    margin: 160px 0px;
-    border: 2px solid black;
-    padding: 0px;
+header h1 {
+    margin: 0px 20px;
+}
+
+header ul {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: -8px 8px;
-}
-
-#Q h1 {
+    margin: 10px 0px;
     padding: 0px;
-    margin: 50px 0px; 
 }
 
-#Q ul {
-  margin: 20px 0px;  
-}
-
-#Q li {
+.nav {
     display: block;
-    text-align: center;
-    padding: 0px;
-    margin: 15px 0px;
 }
 
-#WH {
-    min-width: 80%;
-    height: 500px;
-    font-size: 30px;
-    text-align: center;
-    margin: 160px 0px;
-    border: 2px solid black;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: -8px 8px;
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2px 5px;
+    margin: 0px 5px;
 }
 
-#WH h1{
-    padding: 0px;
-    margin: 50px 0px; 
-}
-
-#WH ul {
-    margin: 20px 0px;
-}
-
-#WH li {
-    display: block;
-    text-align: center;
-    padding: 0px;
-    margin: 15px 0px;
-}
-
-#R {
-    min-width: 80%;
-    height: 500px;
-    font-size: 30px;
-    text-align: center;
-    margin: 160px 0px;
-    border: 2px solid black;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: -8px 8px;
-}
-
-#R h1 {
-    padding: 0px;
-    margin: 50px 0px; 
-}
-
-#R ul{
-    margin: 20px 0px;
-}
-
-#R li {
-    display: block;
-    text-align: center;
-    padding: 0px;
-    margin: 15px 0px;
-}
-
-#footer {
+.nav a:hover {
     background-color: black;
     color: white;
-    bottom: 0px;
-    position: sticky;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    flex-shrink: 0;
-    flex-direction: column;
 }
 
-#footer h3 {
-    margin: 10px 0px 5px 10px;
-    padding-top: 12px;
-    text-align: left;
-    display: flex;
+/* Banner Rules */
+
+#ab {
+    background-image: url("/Photos/DeskPH.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    width: 100%; 
 }
 
-
-#footer ul {
+#banner {
+    opacity: 0.9;
     display: flex;
-    margin: 0px 0px 0px 10px;
-    padding: 0px;
-    font-size: 14px;
+    background-color: white;
+    margin: auto auto;
+    width: 75%;
+    border-radius: 5px;
 }
 
-#footer li {
-    margin-right: 20px;
-    display: block
+#banner img {
+    border-radius: 5px;
+    width: 30%;
+    margin: 20px;
+}
+
+#banner section {
+    margin: auto auto;
+    text-align: center;
+}
+
+/* General Knowledge rules */
+
+#gk {
+    display: grid;
+    grid-template: repeat(36, 50px) / repeat(12, 1fr);
+    background-image: url('/Photos/CircleArch.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+#q1 {
+    grid-area: 3 / 2 / span 6 / span 3;
+    font-size: 2rem;
+    font-family: 'raleway';
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+#q1 p {
+    margin: 50px;
+}
+
+#at {
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+    grid-area: 2 / 6 / span 8 / span 6;
+    text-align: center;
+}
+
+#at h2 {
+    margin: 50px auto 20px auto;
+    font-size: 3rem;
+}
+
+#at p {
+    margin: 70px 20px 0px 20px;
+    font-size: 2rem;
+}
+
+#q {
+    background-color: white;
+    grid-area: 11 / 2 / span 10 / span 6;
+    border-radius: 10px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+#q h2 {
+    font-size: 3rem;
+}
+
+#q ul {
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+
+.q {
+    margin: 20px auto;
+}
+
+#sp {
+    background-image: url('/Photos/FB.PNG');
+    background-size: cover;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    grid-area: 11 / 9 / span 10 / span 3;
+}
+
+#sp img {
+   
+}
+
+#wh {
+    grid-area: 22 / 6 / span 10 / span 6;
+    background-color: white;
+    border: solid 5px black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#wh h2 {
+    font-size: 3rem;
+}
+
+#wh ul {
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+
+.wh {
+    margin: 20px auto;
+}
+
+#ii {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-image: url('/Photos/SP.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 22 / 2 / span 10 / span 3;
+}
+
+/* Footer Rules */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center
+}
+
+footer h3 {
+    margin: 0px;
+}
+
+footer ul {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+
+.ci {
+    display: block;
 }
