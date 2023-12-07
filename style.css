@@ -33,6 +33,7 @@ nav {
     margin: 0px;
     padding: 0px;
     height: 50px;
+    border-radius: 50%;
 }
 
 #logo h1 {
@@ -114,10 +115,7 @@ nav ul {
     width: 90%;
     margin: 20px auto;
     padding: 10px 0px 20px 0px;
-}
-
-#tp h1 {
-    background-color: #F0ECE5;
+    box-shadow: -6px 6px black;
 }
 
 #tp ul {
@@ -125,6 +123,10 @@ nav ul {
     margin: 0px;
     padding: 0px;
     width: 100%;
+}
+
+#tp h1 {
+    color:#F0ECE5;
 }
 
 .tp {
@@ -190,12 +192,12 @@ nav ul {
     align-items: center;
     width: 90%;
     height: 800px;
-    margin: 0px auto;
+    margin: 0px auto 20px auto;
 }
 
 #location h1 {
     background-color:#F0ECE5;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px;
     height: 50px;
     width: 100%;
@@ -217,6 +219,9 @@ nav ul {
     background-color:#F0ECE5;
     color:#161A30;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #bh ul {
@@ -228,4 +233,17 @@ nav ul {
     display: block;
     font-size: 1.25rem;
     margin: 10px 0px;
+}
+
+#btt img {
+    width: 5%;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50px;
+    position: fixed;
+}
+
+#fb {
+    border-radius: 50px;
+    width: 100%;
 }
