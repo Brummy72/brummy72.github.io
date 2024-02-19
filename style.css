@@ -1,74 +1,76 @@
 html {
     font-size: 16px;
     background-color: #E2D784;
-    margin: 0px;
-    padding: 0px;
 }
 
 body {
     width: 100%;
     margin: 0px;
     padding: 0px; 
+    overflow: scroll;
 }
+
+/* Header Rules */
 
 header {
     background-color: #062C30;
     color: white;
-    display: grid;
-    grid: repeat(2, 1fr) / repeat(3, 1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
-}
-
-header h1 {
-    margin: 0px;
-    padding: 0px;
     width: 100%;
-    grid-area: 1 / 2 / 1 / 2;
 }
 
-header p {
-    grid-area: 2 / 2 / 2 / 2;
-    font-size: 2rem;
+header section {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+header section h1 {
     margin: 0px;
     padding: 0px;
+    font-family: 'protest riot';
+    font-size: 5rem;
+    text-shadow: -10px 10px black;
+    height: 100%;
 }
 
 #nav1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 100%;
     padding: 0px;
     justify-content: space-around;
-    grid-area: 1 / 1 / span 2 / 1;
-}
-
-#nav2 {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 100%;
-    padding: 0px;
-    justify-content: space-around;
-    grid-area: 1 / 3 / span 2 / 3;
 }
 
 .nav {
     display: flex;
-    margin: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
     padding: 0px;
-    width: 30%;
+    width: 15%;
+    height: 50%;
 }
 
 .nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-size: 1.25rem;
     color: white;
     padding: 5px 10px;
     background-color: #05595B;
-    width: 100%;
     height: 100%;
+    width: 100%;
+}
+
+.nav a p {
+    font-size: 100%;
 }
 
 .nav a:hover {
@@ -80,13 +82,116 @@ header p {
     width: 100%;
 }
 
+/* Main Body Rules */
+
 main {
-    text-align: center;
+    width: 100%;
 }
 
-main h1 {
-    margin: 100px 20px;
+#quote {
+    text-align: center;
+    width: 80%;
+    box-shadow: #062C30 -5px 5px;
+    border: solid black 2px;
+    margin: 50px auto;
+    background-image: url("/Photos/Design 5.png");
+    background-size: cover;
+    background-position: bottom;
+    color: black;
+    font-family: 'protest riot';
+}
+
+#quote h1 {
     font-size: 5rem;
-    color: #062C30;
     font-weight: 800;
+}
+
+#quote h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color:#062C30;
+    margin: 0px;
+}
+
+.photos {
+    background-color: white;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.photos h1 {
+    font-size: 2rem;
+    font-family: 'Raleway';
+    margin: 20px 0px;
+}
+
+.photos h2 {
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    margin: 20px 0px;
+}
+
+.photo {
+    border: solid black 5px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+#sd {
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#sd ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sd ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+#sd ul li h1 {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+}
+
+#sd ul li p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: -2px 2px black;
+    background-color:#062C30;
+    color: white;
+}
+
+button:hover {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px;
+    background-color:#05595B;
+    color: white;
 }
