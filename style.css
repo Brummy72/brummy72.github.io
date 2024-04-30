@@ -16,7 +16,7 @@ body {
 }
 
 #sk {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
     padding: 0px;
 }
@@ -53,7 +53,7 @@ nav {
     min-height: min-content;
     position: fixed;
     z-index: 1;
-    border-bottom: solid 5px white;
+    border-bottom: solid 5px #002855;
     background-size: cover;
 }
 
@@ -64,14 +64,16 @@ nav img {
 }
 
 nav h1 {
-    color:#EAAA00;
+    color:#002855;
+    font-weight: 900;
     font-family: 'Caveat';
-    font-size: 3rem;
+    font-size: 6rem;
     text-shadow: -1px 1px white;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 00px 0px;
     padding: 0px;
     text-align: center;
-    text-decoration: underline white;
+    text-decoration: underline #002855;
+    background-color: #EAAA00;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -103,7 +105,7 @@ nav ul {
     text-align: center;
     width: 24.6%;
     min-width: min-content;
-    background-color: #002855;
+    background-color: #EAAA00;
     text-align: center;
 }
 
@@ -127,12 +129,14 @@ nav ul {
     text-decoration: underline #002855;
     text-align: center;
     color: #002855;
+    border: solid 1px #002855;
     margin: 0px;
     padding: 10px 0px;
-    background-color: #EAAA00;
+    background-color: white;
     font-size: 1.5rem;
     font-weight: 900;
     width: 100%;
+    box-shadow: -2px 2px #002855;
 }
  
 
@@ -149,7 +153,7 @@ banner {
 banner img {
     width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 /* Specials Rules */
@@ -200,7 +204,7 @@ banner img {
     color:#EAAA00;
     margin: 5px 0px;
     padding: 20px;
-    width: 20%; 
+    width: 20%;
     opacity: 85%;
     justify-items: space-around;
     min-height: min-content;
@@ -224,6 +228,31 @@ banner img {
 .specials p {
     font-size: 1.75rem;
     font-family: "Merriweather";
+    opacity: 100%;
+}
+
+/* Banner 2 Rules */
+#sp1 {
+    text-align: center;
+    color:#002855;
+    font-size: 1.5rem;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    margin: 10px 0px;
+    background-color: #EAAA00;
+}
+
+#sp1 h2 {
+
+}
+
+
+#B2 {
+ 
+}
+
+#B2 img {
+    width: 100%;
     opacity: 100%;
 }
 
@@ -256,6 +285,7 @@ banner img {
 .mi {
     background-color: white;
     background-image: url("/Photos/MBr.png");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -282,7 +312,7 @@ banner img {
 #Menu ul li {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: center;
     height: 100%;
     width: 48%;
     margin: 0px 0px;
@@ -305,7 +335,7 @@ banner img {
     font-size: 1.5rem;
     padding: 0px;
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 65%;
 }
 
 #Menu h3 {
@@ -325,7 +355,7 @@ banner img {
 }
 
 #S {
-
+    line-height: 38px;
 }
 
 #W {
@@ -338,7 +368,6 @@ banner img {
     text-decoration: none;
     padding: 22px 0px;
     margin: 0px 0px 30px 0px;
-    border: solid 8px #002855;
     border-radius: 5%;
     width: 75%;
     margin: 30px auto;
@@ -350,7 +379,7 @@ banner img {
     text-decoration: none;
     padding: 22px 0px;
     margin: 30px auto;
-    border: solid 8px #EAAA00;
+    box-shadow: -8px 8px #EAAA00;
 }
 
 
@@ -398,12 +427,22 @@ banner img {
 /* Location Rules */
 
 #mll {
-    width: 0%
+    width: 0%;
+}
+
+#spacer {
+    color:#EAAA00;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 10px white;
+    border-bottom: solid 10px white;
+    margin: 20px 0px;
+    font-family: 'Playfair Display';
 }
 
 #LOC {
     display: flex;
-    justify-content: center;
+    justify-content:    flex-end;
     align-content: center;;
     background-image: url("/Photos/FOS.png");
     background-size: cover;
@@ -426,10 +465,27 @@ banner img {
 #ADD h1 {
     font-size: 2rem;
     background-color: #002855;
-    opacity: 70%;
     padding: 20px 0px;
     margin: 300px auto 0px auto;
     width: 100%;
+}
+
+#add {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    font-size: 3rem;
+    opacity: 70%;
+}
+
+#add:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    font-size: 3rem;
+    opacity: 100%
 }
 
 .l {
@@ -540,6 +596,10 @@ banner img {
     opacity: 75%;
 }
 
+#BTT:hover {
+    opacity: 100%;
+}
+
 /* Media Rules */
 
 @media only screen and (max-width: 900px) {
@@ -554,12 +614,12 @@ banner img {
     }
 
     .Nav {
-        display: block;
+    display: block;
     margin: 1px 0px;
     padding: 0px 0px;
     min-height: min-content;
     text-align: center;
-    width: 49.5%;
+    width: 24.8%;
     min-width: min-content;
     background-color: #002855;
     text-align: center;
@@ -576,7 +636,7 @@ banner img {
     banner img {
         width: 100%;
         margin: 0px;
-        padding: 190px 0px 0px 0px;
+        padding: 70px 0px 0px 0px;
     }
 
     #Menu ul {
@@ -596,7 +656,7 @@ banner img {
 
     .mi {
         align-self: first baseline;
-        margin: 0px;
+        margin: 15px 0px;
         padding: 0px;
     }
 
@@ -622,6 +682,11 @@ banner img {
 
     #footer {
         margin: 0px 0px 100px 0px;
+        padding:20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 300px
     }
 
     #footer ul {
@@ -631,7 +696,7 @@ banner img {
         flex-wrap: wrap;
         margin: 0px;
         padding: 0px;
-        border: solid 6px white;
+        border: solid 0px white;
         min-width: min-content
     }
 
@@ -648,9 +713,13 @@ banner img {
     }
 
     #BTT {
-        width: 96%;
-        margin: 10px auto;
-
+        width: 99%;
+        margin: 0px;
+        min-width: min-content;
+        border-top:solid 2px #EAAA00;
+        border-left: solid 0px;
+        border-right: solid 0px;
+        border-bottom: solid 2px #EAAA00;
     }
    
     #LOC {
@@ -661,7 +730,7 @@ banner img {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 175px;
+        width: 98%;
         text-align: center;
         align-items: center;
         color: white;
@@ -684,4 +753,25 @@ banner img {
         margin: 0px;
         padding: 0px;
     }
+
+    nav {
+        height: 10%;
+        overflow: hidden;
+    }
+    
+    nav h1 {
+        font-size: 3rem;
+    }
+
+    #Specials ul li {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) { 
+
+    #Specials ul li {
+        width: 100%;
+    }
+
   }
