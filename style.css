@@ -5,11 +5,19 @@ html {
     margin: 0px;
     padding: 0px;
     overflow: scroll;
-    opacity: 95%;
+    background-color: #002855;
 }
 
 body {
     margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#sk {
+    width: 90%;
+    margin: 0px auto;
     padding: 0px;
 }
 
@@ -46,7 +54,6 @@ nav {
     position: fixed;
     z-index: 1;
     border-bottom: solid 5px white;
-    background-image: url("/Photos/SBr.png");
     background-size: cover;
 }
 
@@ -535,7 +542,7 @@ banner img {
 
 /* Media Rules */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     #Saub h4 {
         border: none;
         background-color: none;
@@ -644,5 +651,37 @@ banner img {
         width: 96%;
         margin: 10px auto;
 
+    }
+   
+    #LOC {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: url("/Photos/FOS.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 175px;
+        text-align: center;
+        align-items: center;
+        color: white;
+        border: solid 10px #002855;
+        flex-wrap: wrap;
+        min-width: min-content;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #LOC h1 {
+        font-size: 1rem;
+    }
+
+    .l {
+        margin: 0px;
+    }
+    
+    #lo h2 {
+        margin: 0px;
+        padding: 0px;
     }
   }
