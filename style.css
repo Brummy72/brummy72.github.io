@@ -84,7 +84,7 @@ nav ul li a:hover {
     padding-bottom: 50px;
     max-width: 800px;
     margin: auto;
-    animation: fadeIn 3.5s ease-in-out;
+    animation: fadeIn 2.5s ease-in-out;
 }
 
 .hero h2 {
