@@ -73,17 +73,14 @@
             <h2>Contact</h2>
             <p>Interested in scheduling a tutoring session?</p>
 
-            <form
-              action="https://formspree.io/f/mwvjvyoy"
-                method="POST">
-                <input type="text" placeholder="Your Name" required>
+            <form action="https://formspree.io/f/mwvjvyoy" method="POST"> 
+                <input type="text" name="name" placeholder="Your Name" required > 
+                <input type="email" name="email" placeholder="Your Email" required > 
+                <textarea name="message" placeholder="Tell me about your tutoring needs..." rows="5" required >
 
-                <input type="email" placeholder="Your Email" required>
-
-                <textarea placeholder="Tell me about your tutoring needs..." rows="5"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+                </textarea> 
+                <input type="hidden" name="_subject" value="New Tutoring Inquiry" > 
+                <button type="submit">Send Message</button> </form>
         </div>
     </section>
 
