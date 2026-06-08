@@ -280,6 +280,7 @@ footer {
 
     #about p {
         max-width: 750px;
+        font-size: 1rem;
     }
 
     #about img {
